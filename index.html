@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salary Calculator India - Calculate In-Hand Salary, CTC & Tax</title>
+<meta name="description" content="Free Indian salary calculator to estimate in-hand salary, CTC, PF, HRA, deductions and income tax.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="index.html">SalaryCalc India</a><button class="menu" aria-label="Toggle navigation">☰</button><nav>
+<a href="index.html">Home</a><a href="salary-calculator.html">Salary</a><a href="ctc-to-in-hand.html">CTC</a><a href="hra-calculator.html">HRA</a><a href="pf-calculator.html">PF</a><a href="income-tax-calculator.html">Tax</a>
+</nav></div></header>
+<main class="wrap">
+<section class="hero"><h1>Salary Calculator India</h1><p>Estimate your monthly in-hand salary, CTC, deductions and tax.</p></section>
+<section class="card calculator">
+<h2>Calculate Your In-Hand Salary</h2>
+<div class="grid">
+<label>Annual CTC (₹)<input id="ctc" type="number" min="0" value="600000"></label>
+<label>Basic Salary (% of CTC)<input id="basicPct" type="number" min="0" max="100" value="40"></label>
+<label>HRA (% of Basic)<input id="hraPct" type="number" min="0" max="200" value="50"></label>
+<label>PF<input id="pfPct" type="number" min="0" max="100" value="12"></label>
+<label>Professional Tax / month (₹)<input id="pt" type="number" min="0" value="200"></label>
+<label>Other Deductions / month (₹)<input id="other" type="number" min="0" value="0"></label>
+</div>
+<fieldset><legend>Tax Regime</legend><label class="inline"><input type="radio" name="regime" value="new" checked> New</label><label class="inline"><input type="radio" name="regime" value="old"> Old</label></fieldset>
+<button class="primary" id="calculate">Calculate Salary</button>
+<div id="error" class="error" role="alert"></div>
+<div id="results" class="results" hidden></div>
+</section>
+<section class="content">
+<h2>How Does a Salary Calculator Work?</h2>
+<p>CTC, gross salary and take-home salary are different. CTC may include employer contributions and benefits that do not arrive in your bank account each month. This calculator provides an estimate based on the assumptions you enter.</p>
+<h2>CTC vs In-Hand Salary</h2><p>In-hand salary is generally lower than CTC because of employee PF, income tax and other deductions. Employer-side contributions can also be included in CTC.</p>
+<h2>Frequently Asked Questions</h2>
+<details><summary>What is CTC?</summary><p>CTC means Cost to Company: the estimated annual cost an employer incurs for an employee.</p></details>
+<details><summary>What is in-hand salary?</summary><p>It is the amount you actually receive after applicable deductions.</p></details>
+<details><summary>Is CTC the same as take-home salary?</summary><p>No. CTC can contain components that are not paid directly as monthly cash.</p></details>
+</section>
+</main>
+<footer><div class="wrap"><b>SalaryCalc India</b><p><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy-policy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="disclaimer.html">Disclaimer</a></p><small>Educational estimates only. Not a government website.</small></div></footer>
+<script src="js/calculator.js"></script><script src="js/site.js"></script>
+</body></html>
